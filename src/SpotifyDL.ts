@@ -27,7 +27,7 @@ export class SpotifyDL {
       case "/help": {
         this.client.react("💼");
         this.client.reply(
-          "🎧 *SpotifyDL*\n\n*/track URL*\n*/tracks URLS[]*\n\nMade by: https://github.com/Halo333X\nSource Code: "
+          "🎧 *SpotifyDL*\n\n*/track URL*\n*/tracks URLS[]*\n\nMade by: https://github.com/Halo333X\nSource Code: https://github.com/Halo333X/SpotifyDL-WWEB.JS"
         );
       }
     }
