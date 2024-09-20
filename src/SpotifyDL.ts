@@ -63,11 +63,13 @@ export class SpotifyDL {
 💽 *Album: ${downTrack?.album?.name}*`
           );
           info.reply(media);
+          setTimeout(() => {
+            info.reply(media, undefined, { caption: "*Download here*", sendMediaAsDocument: true });
+          }, 2000);
           this.client.react("🎵");
           break;
         } else {
           console.error("El buffer de audio es inválido o está vacío.");
-          this.client.react("⛔");
         }
       } catch (error) {
         console.error(`Intento ${attempt} fallido para ${url}:`, error);
